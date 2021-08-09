@@ -1,4 +1,59 @@
+
+
+
+
+.h1-welcome {
+color: rgb(3, 4, 10);
+text-shadow: 3px 1px rgba(29, 37, 31, 0.7);
+font-family: 'Orbitron', sans-serif;
+
+font-size: 40px;
+}
+
 .weekDays {
     display: flex;
     justify-content: space-between;
+}
+
+#form-sign {
+    display: flex;
+    flex-direction:  column;
+    margin: 50px;
+   
+}
+
+#form-sign input {
+    height: 25px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#form-sign label {
+   
+    font-family: 'Orbitron', sans-serif;
+
+    text-shadow: 3px 3px rgba(0, 242, 255, 0.7);
+    font-size: 30px;
+    color:rgb(56, 79, 98)
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    text-decoration: underline;
+    color: rgb(206, 212, 26);
+    
+}
+
+span:hover {
+    cursor: pointer;
+    color: rgb(221, 8, 8);
+    
+   
 }

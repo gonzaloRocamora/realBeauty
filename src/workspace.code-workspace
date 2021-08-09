@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../new-app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test js"
+	}
+}
