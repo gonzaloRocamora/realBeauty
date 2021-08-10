@@ -7,7 +7,7 @@ import  useDate  from './useDate';
 import './styles.css'
 
 
-export default function Calendar  ({email})  {
+export default function Calendar  ()  {
   const [nav, setNav] = useState(0);
   const [clicked, setClicked] = useState();
 //obtenemos el dia del año clickeado
@@ -69,7 +69,7 @@ export default function Calendar  ({email})  {
         <NewEventModal
           onClose={() => setClicked(null)}
           clicked={clicked}
-          email={email}
+         
         />
       }
 

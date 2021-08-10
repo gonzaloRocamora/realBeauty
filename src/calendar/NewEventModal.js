@@ -19,7 +19,7 @@ export default function NewEventModal({ onClose, clicked }) {
         day: clicked,
       
       });
-      alert('Hemos enviado un mail de confimarcion a tu cuenta de email.')
+      alert('Hemos enviado un mail de confirmacion a tu cuenta de email.')
       onClose();
     }else{
       alert('Debes seleccionar una opcion FORRO!')

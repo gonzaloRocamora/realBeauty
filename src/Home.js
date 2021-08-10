@@ -1,7 +1,7 @@
 import React from 'react'
 import Calendar from './calendar/Calendar';
 
-export default function Home({logOut, email}) {
+export default function Home({logOut,}) {
     
   
    
@@ -9,7 +9,7 @@ export default function Home({logOut, email}) {
         <div>
            
            <h4>Selecciona un dia y horario</h4>
-           <Calendar email={email} />
+           <Calendar  />
 
             <button onClick={logOut}>Log out</button>
         </div>
