@@ -1,9 +1,15 @@
+
+
 body {
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    
-    background-color: #b43820;
+    background-repeat: no-repeat;
+    background-image: url('../marampo.jpg');
+    background-position: center center;
+    background-size: cover;
+ 
+
   }
   button {
     margin-right: 2.5px;
@@ -53,12 +59,13 @@ body {
     height: 100px;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: rgb(23, 134, 4);
+    background-color: rgba(62, 186, 40, 0.50);
     margin: 5px;
-     
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
   }
   .day:hover {
     background-color: #db0e0e;
