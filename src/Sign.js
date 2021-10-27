@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import fire from "./firebase";
 import "firebase/auth";
 import Home from "./Home";
-import "./styles.css";
+import "./logStyle.css";
 import SignInForm from "./SignInForm";
 
 export default function Sign() {
@@ -34,7 +34,7 @@ authListener();
 
   return (
     <div>
-      <h1 className="h1-welcome">Marampo Barber Shop</h1>
+      <h1 className="h1-welcome"></h1>
 
       {!hasUser ? (
         <SignInForm 

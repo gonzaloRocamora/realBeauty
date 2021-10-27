@@ -1,17 +1,18 @@
 import firebase from "firebase/app";
-import {  } from "module";
+
 
 
 
 var firebaseConfig = {
-    apiKey: "AIzaSyBqQ5RM99j7lXQFE_N8Z5SVcZavuF_vVlE",
-    authDomain: "log-in-real-beauty.firebaseapp.com",
-    projectId: "log-in-real-beauty",
-    storageBucket: "log-in-real-beauty.appspot.com",
-    messagingSenderId: "801659278054",
-    appId: "1:801659278054:web:a92cfc5ac592a8f204a127"
+    apiKey: process.env.REACT_APP_KEY,
+    authDomain: process.env.REACT_APP_AUTH,
+    databaseURL: process.env.REACT_APP_DB,
+    projectId: process.env.REACT_APP_ID,
+    storageBucket: process.env.REACT_APP_SB,
+    messagingSenderId: process.env.REACT_APP_MSJ,
+    appId: process.env.REACT_APP_APPID,
   };
- 
+ console.log('process?',process.env.REACT_APP_APPID)
   
   const fire =  firebase.initializeApp(firebaseConfig);
   

@@ -30,7 +30,7 @@ export default function Calendar  ()  {
   
   return(
     <>
-      <div id="container">
+      <div id="calendar">
         <CalendarHeader 
           dateDisplay={dateDisplay}
           onNext={() => setNav(nav + 1)}

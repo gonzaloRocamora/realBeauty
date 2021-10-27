@@ -9,7 +9,7 @@ export default function NewEventModal({ onClose, clicked }) {
 
   //agregar data a firestore horas y dia clickeado
   const saveHour = async () => {
-    console.log('hola',horas)
+    console.log('horas ?',horas)
     
     
     if (horas && horas != "ninguna-opcion" ) {
