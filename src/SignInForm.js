@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { handleSignUp, handleSignIn } from "./dbFunctions";
-
+import './logStyle.css'
 import "firebase/auth";
 
 export default function SignInForm() {
@@ -11,8 +11,11 @@ export default function SignInForm() {
   const [password, setPassword] = useState();
 
   return (
-    <div>
-      <form id="form-sign">
+    <div className="divForm">
+     
+      <div className="divSign">
+      <h1>Welcome To Marampo</h1>
+      <form >
         <label htmlFor="email">Escribe tu email</label>
         <input
           id="email"
@@ -74,6 +77,8 @@ export default function SignInForm() {
           </div>
         )}
       </form>
+      </div>
+      
     </div>
   );
 }

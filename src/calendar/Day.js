@@ -2,10 +2,11 @@ import React from 'react';
 
 export default function Day ({ day, onClick })  {
   const className = `day ${day.value === 'padding' ? 'padding' : ''} ${day.isCurrentDay ? 'currentDay' : ''}`;
+  console.log('hola',day.value);
   //deconstruyo el objeto para acceder al valor date
   //tambien podemos obetener el numero de dias con day.value o ppasar {value}
   //console.log(day)
-  let arrDays = ['Dom', 'Lun', 'Mar', 'Mie', 'Jue','Vie', 'Sab'];
+  let arrDays = ['Sun', 'Mon', 'Tue', 'Wen', 'Thu','Fri', 'Sat'];
   //con el date   que obtengo de mi objeto day utilizo la fecha mm/dd//yyy para obetner el actual day con getDay()
   //luego con el numero de actual day le paso el index a arrDays  mas el numero del dia con day.value
   const {date} = day;

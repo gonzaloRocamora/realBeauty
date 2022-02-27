@@ -10,6 +10,7 @@ import './styles.css'
 export default function Calendar  ()  {
   const [nav, setNav] = useState(0);
   const [clicked, setClicked] = useState();
+
 //obtenemos el dia del año clickeado
   //console.log(clicked)
   const [events, setEvents] = useState(
@@ -30,7 +31,8 @@ export default function Calendar  ()  {
   
   return(
     <>
-      <div id="calendar">
+     <div className='divCalendar'>
+     <div>
         <CalendarHeader 
           dateDisplay={dateDisplay}
           onNext={() => setNav(nav + 1)}
@@ -38,15 +40,7 @@ export default function Calendar  ()  {
          
         />
 
-        <div id="weekdays">
-          <div>Domingo</div>
-          <div>Lunes</div>
-          <div>Martes</div>
-          <div>Miercoles</div>
-          <div>Jueves</div>
-          <div>Viernes</div>
-          <div>Sabado</div>
-        </div>
+      
 
         <div id="calendar">
           {days.map((mapDays, index) => (
@@ -57,6 +51,7 @@ export default function Calendar  ()  {
               onClick={() => {
                 if (mapDays.value !== 'padding') {
                   setClicked(mapDays.date);
+                  
                 }
               }}
             />
@@ -73,6 +68,8 @@ export default function Calendar  ()  {
         />
       }
 
+     </div>
+      
     
     </>
   );

@@ -1,5 +1,15 @@
+.divHome {
+max-width: 1200px;
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: 0 auto;
+height: auto;
 
-
+}
+.divHome h1{
+  font-family: 'Audiowide', cursive;
+}
 
 button {
   margin: 10px 0px 0px 10px;
@@ -17,50 +27,41 @@ button {
 
 #header {
   padding: 10px;
-  color: #6c8bd3;
+  color: #2b5cce;
   font-size: 26px;
-  font-family: sans-serif;
+  font-family: 'Audiowide', cursive;
   display: flex;
   justify-content: space-between;
   
 }
 #header button {
-  background-color:#92a1d1;
+  background-color:#3dccdf;
+  font-family: 'Audiowide', cursive;
 }
-#container {
-  margin:0;
-  padding:0;
-  
- 
-}
-#weekdays {
-  width: 100%;
-  display: flex;
-  color: #247BA0;
-}
-#weekdays div {
-  width: 100px;
-  padding: 10px;
-  visibility: hidden;
-  
-}
-#calendar {
-  
-  
+
+
+#calendar {   
   margin: auto;
   display: flex;
   flex-wrap: wrap;
- align-items: center;
+  padding-top: 6vh;
+  padding-bottom: 5vh;
+ justify-content: center;
  flex-direction:initial;
+ 
+ max-width: 600px;
+ 
 }
 .day {
   margin: 5px;
-  width: 20vw;
+  width: 10vw;
+  min-width: 50px;
+  max-width: 100px;
   padding: 10px;
   height: 6 vh;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #336dd2;;
+  background-color: #0f61ee;;
   margin: 5 px;
   box-shadow: 0px 0px 3px #CBD4C2;
   display: flex;
@@ -118,7 +119,7 @@ button {
   border: 2px solid red;
 }
 #cancelButton, #deleteButton {
-  background-color: #d36c6c;
+  background-color: #6cd393;
 }
 #saveButton, #closeButton {
   background-color: #92a1d1;
