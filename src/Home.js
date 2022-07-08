@@ -12,7 +12,7 @@ export default function Home({logOut,}) {
            <h3>Selecciona un dia y horario</h3>
            <Calendar  />
 
-            <button onClick={logOut}>Log out</button>
+            <button className='logoutBtn' onClick={logOut}>Log out</button>
         </div>
    
    )

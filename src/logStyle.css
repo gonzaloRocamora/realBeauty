@@ -55,6 +55,9 @@ span {
 span:hover {
     cursor: pointer;
     color: rgb(221, 8, 8);
-    
-   
+ 
+}
+
+.logoutBtn{
+    background-color: rgb(255, 65, 65);
 }
