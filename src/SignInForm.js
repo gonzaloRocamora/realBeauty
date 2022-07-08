@@ -16,8 +16,9 @@ export default function SignInForm() {
       <div className="divSign">
       <h1>Welcome To Marampo</h1>
       <form >
-        <label htmlFor="email">Escribe tu email</label>
+        <label htmlFor="email"></label>
         <input
+          placeholder="Mail"
           id="email"
           type="email"
           onChange={function (data) {
@@ -25,8 +26,9 @@ export default function SignInForm() {
           }}
           required
         ></input>
-        <label htmlFor="password">Escribe tu contraseña</label>
+        <label htmlFor="password"></label>
         <input
+          placeholder="Password"
           id="password"
           type="password"
           onChange={function (data) {
@@ -46,7 +48,7 @@ export default function SignInForm() {
             </button>{" "}
             <p>
               No tienes una cuenta?
-              <span onClick={() => setHasAccount(!hasAccount)}>Registrate</span>
+              <span onClick={() => setHasAccount(!hasAccount)}><strong>Registrate</strong></span>
             </p>
           </div>
         ) : (
@@ -68,7 +70,7 @@ export default function SignInForm() {
             >
               Registrate
             </button>{" "}
-            <p>
+            <p className="pCuenta">
               Ya tienes una cuenta?
               <span onClick={() => setHasAccount(!hasAccount)}>
                 Inicia sesión

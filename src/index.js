@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import  {StrictMode}  from "react";
+import  {createRoot}  from "react-dom/client";
 import './index.css'
-
 import Sign from './Sign';
 
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
 
-ReactDOM.render(
-  <React.StrictMode>
+root.render(
+  <StrictMode>
     <Sign />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </StrictMode>,
 );
 
