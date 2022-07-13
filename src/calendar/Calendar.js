@@ -53,6 +53,7 @@ export default function Calendar() {
                 onClick={() => {
                   if (mapDays.value !== "padding") {
                     setClicked(mapDays.date);
+                    console.log("map",mapDays)
                   }
                 }}
               />

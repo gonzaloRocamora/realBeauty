@@ -12,7 +12,7 @@ export default function Day ({ day, onClick })  {
   const {date} = day;
   let stringed = new Date(date)
   let actualDay = stringed.getDay()
-  console.log('STRINGED => ',actualDay)
+  //console.log('STRINGED => ',actualDay)
   return (
     <div onClick={onClick} className={className}>
       

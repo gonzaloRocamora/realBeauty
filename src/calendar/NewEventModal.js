@@ -22,7 +22,7 @@ export default function NewEventModal({ onClose, clicked }) {
       alert('Hemos enviado un mail de confirmacion a tu cuenta de email.')
       onClose();
     }else{
-      alert('Debes seleccionar una opcion FORRO!')
+      alert('Debes seleccionar una opcion ')
     }
    
   };
